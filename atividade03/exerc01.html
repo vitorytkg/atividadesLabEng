@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <script src="script01.js"></script>
+</head>
+
+<body>
+    <h1>Adicionar Items</h1>
+    <form>
+        <label for="item">Digite algo que quer adicionar na lista:</label>
+        <input type="text" name="item" id="item" onkeydown="handleKey(event)">
+        <input type="button" value="Adicionar" id="button" onclick="adicionar()">
+        <ul id="lista"></ul>
+    </form>
+</body>
+
+</html>
