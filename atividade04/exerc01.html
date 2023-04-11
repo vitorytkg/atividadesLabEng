@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script01.js"></script>
+</head>
+
+<body>
+    <div class="control">
+        <form>
+            <fieldset>
+                <h1>Formulário de Cadastro</h1>
+
+                <div class="inputStyle">
+                    <label for="">Nome:</label>
+                    <input class="inputNome" type="text" name="nome" id="nome" placeholder="Digite seu nome completo"><br><br>
+
+                    <label for="">E-mail:</label>
+                    <input class="inputEmail" type="email" name="email" id="email" placeholder="Digite seu e-mail">
+
+                    <label for="">Data de Nascimento:</label>
+                    <input type="date" name="data" id="data"><br><br>
+
+                    <label for="">Telefone Fixo:</label>
+                    <input type="number" name="fixo" id="fixo" placeholder="(18)0000-0000">
+
+                    <label for="">Telefone Celular:</label>
+                    <input type="number" name="celular" id="celular" placeholder="(18)0000-0000"><br><br>
+
+                        <label for="">Selecione uma opção:</label>
+                        <input type="radio" name="opcao" id="professor">
+                        <label for="">Professor</label>
+
+                        <input type="radio" name="opcao" id="aluno">
+                        <label for="">Aluno</label><br><br>
+
+                    <div id="opProfessor">
+                        <label for="">Área:</label>
+                        <input type="text" name="area" id="area" placeholder="Digite sua área de atuação">
+    
+                        <label for="">Mátricula:</label>
+                        <input type="text" name="matricula" id="matriculaProfessor" placeholder="Digite sua mátricula"><br><br>
+    
+                        <label for="">Lattes:</label>
+                        <input class="inputLatte" type="text" name="lattes" placeholder="Digite aqui seu endereço para seus lattes"><br><br>
+                    </div>
+
+                    <div id="opAluno">
+                        <label for="">Curso:</label>
+                        <input type="text" name="curso" id="curso" placeholder="Digite seu curso">
+    
+                        <label for="">Mátricula:</label>
+                        <input type="text" name="matricula" id="matriculaAluno" placeholder="Digite sua mátricula"><br><br>
+                    </div>
+                </div>
+
+                <input type="submit" onclick="Enviar()" value="Enviar" >
+                <input type="reset" onclick="Redefinir()" name="reset">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
